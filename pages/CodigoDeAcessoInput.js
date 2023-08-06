@@ -29,7 +29,13 @@ const CodigoDeAcessoInput = () => {
 
   return (
     <View style={styles.container}>
-      <Image source={require("../assets/logo.png")} style={styles.logo} />
+      <View style={styles.imageContainer}>
+        <Image
+          source={require("../assets/logo.png")}
+          style={styles.logo}
+          resizeMode="contain"
+        />
+      </View>
       <Text style={styles.text2}>Insira o código de acesso</Text>
       <TextInput
         style={styles.input}
@@ -48,15 +54,22 @@ const CodigoDeAcessoInput = () => {
   );
 };
 const styles = StyleSheet.create({
+  imageContainer: {
+    alignItems: "center",
+    justifyContent: "center",
+    width: 280, // Set the desired width for the image container
+    height: 100, // Set the desired height for the image container
+  },
   container: {
     backgroundColor: "dark",
   },
   logo: {
-    position: "relative",
-    marginBottom: 20,
+    width: "100%",
+    height: "100%",
+    marginBottom: 50,
   },
   text2: {
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: "bold",
     color: "white",
     marginBottom: 10,
@@ -82,7 +95,7 @@ const styles = StyleSheet.create({
   },
   errorText: {
     color: "red",
-    fontSize: 16,
+    fontSize: 15,
     marginTop: 10,
   },
 });
