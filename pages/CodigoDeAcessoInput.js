@@ -19,7 +19,7 @@ const CodigoDeAcessoInput = () => {
 
   const handleAcessar = () => {
     if (codigo.trim() === "") {
-      setErro("O campo de código de acesso não pode estar vazio.");
+      setErro("O código de acesso não pode estar vazio.");
     } else {
       // Faça a ação que você deseja realizar ao pressionar o botão "Acessar" aqui.
       // Por exemplo, navegar para outra tela, enviar o código para um servidor, etc.
