@@ -11,15 +11,19 @@
       "resizeMode": "contain",
       "backgroundColor": "black"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gerador.geradordenotificacoes"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "black"
-      }
+      },
+      "package": "com.gerador.geradordenotificacoes"
     },
     "web": {
       "favicon": "./assets/favicon.png"
